@@ -1,4 +1,4 @@
-# 🕹️ Titre du projet : Battle Arena (prototype console)
+# 🕹️ Battle Arena (MVP)
 
 ## 🎯 Objectif du jeu
 
@@ -53,7 +53,7 @@ Le jeu se déroule en tours successifs :
 
 - Pas d’interface graphique. Le jeu doit se jouer dans le terminal (console).
 - L’application doit être documentée en anglais (commentaires clairs).
-- Le code doit être structuré pour être facilement compréhensible (idéal pour un stagiaire).
+- Le code doit être structuré pour être facilement compréhensible (utilisation de packages et sous packages).
 - Le but est un prototype fonctionnel, pas une version finale.
 
 ## Concepts clés à utiliser :
@@ -65,5 +65,4 @@ Le jeu se déroule en tours successifs :
 | **Interface**        | `Healer`, `Attacker` définissant des capacités spécifiques           |
 | **Classe abstraite** | `Character` (force les sous-classes à implémenter `action()`)        |
 | **Polymorphisme**    | Liste de `Character` contenant différents types (appel à `action()`) |
-| **Encapsulation**    | Gestion interne de la santé et des dégâts                            |
-| **Composition**      | Un `Character` possède une `Weapon`                                  |
+| **Encapsulation**    | Gestion interne de la santé et des dégâts                            |                                |
