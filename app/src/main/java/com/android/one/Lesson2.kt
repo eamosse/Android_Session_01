@@ -55,7 +55,7 @@ fun applyDiscount(price: Double, discount: Double = 0.1): Double {
 // TODO 10: Return a lambda based on operation symbol.
 fun getOperation(symbol: String): (Int, Int) -> Int {
     TODO(
-        "Return a lambda based on operation symbol. \uD83D\uDD27" +
+        "Return a lambda based on operation symbol." +
                 "- '+' for addition\n" +
                 "- '-' for subtraction\n" +
                 "- '*' for multiplication\n" +
@@ -166,7 +166,6 @@ fun main() {
         }
     }
 
-    // 🟢 LEVEL 1
     verify(name = "greet() with default") { greet() == "Student" }
     verify(name = "greet(\"Alice\")") { greet("Alice") == "Alice" }
     verify("printInfo with all defaults") {
@@ -181,20 +180,16 @@ fun main() {
         result in 12.56..12.58
     }
 
-    // 🟡 LEVEL 2
     verify("grade(95) == 'A'") { grade(95) == "A" }
     verify("grade(82) == 'B'") { grade(82) == "B" }
     verify("maxOfThree(3,9,6) == 9") { maxOfThree(3, 9, 6) == 9 }
     verify("toFahrenheit(20.0) == 68.0") { (toFahrenheit(20.0) - 68.0).absoluteValue < 0.1 }
 
-    // 🟠 LEVEL 3
     verify("applyDiscount(100.0) == 90.0") { (applyDiscount(100.0) - 90.0).absoluteValue < 0.001 }
     verify("applyDiscount(100.0, 0.2) == 80.0") { (applyDiscount(100.0, 0.2) - 80.0).absoluteValue < 0.001 }
 
-    // 🔵 LEVEL 4
     verify("getOperation('+')(4,5) == 9") { getOperation("+")(4, 5) == 9 }
 
-    // 🟣 LEVEL 5
     verify("capitalizeWords works") { capitalizeWords("hello kotlin world") == "Hello Kotlin World" }
     verify("bmi(70,1.75) ≈ 22.86") { bmi(70.0, 1.75) in 22.8..22.9 }
     verify("passwordStrength detects strong") { passwordStrength("MyPass123") }
@@ -203,11 +198,9 @@ fun main() {
         filterEvenNumbers(listOf(1, 2, 3, 4, 5, 6)) == listOf(2, 4, 6)
     }
 
-    // ⚫ LEVEL 6
     verify("factorial(5) == 120") { factorial(5) == 120 }
     verify("fibonacci(6) == 8") { fibonacci(6) == 8 }
 
-    // 🧠 LEVEL 7
     verify("analyzeText stats") {
         val result = analyzeText("Kotlin is fun and powerful")
         result["charCount"] == 26 &&
